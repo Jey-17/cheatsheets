@@ -13,6 +13,10 @@ header {
 .class {
     /* Each element like: <div class="class"></div> */
 }
+
+#id{
+    /* each element with id="id" */
+}
 ```
 
 
@@ -22,10 +26,11 @@ There are different units that can be used in CSS:
 
 ```css
 .class{
-    height: 100px; /* pixel units */
+    height: 100px; /* pixel unit */
     height: 100%; /* percentage of the parent element */
     height: 100vh; /* percentage of the entire window */
-    height: 1rem; /* responsive to the font-size of HTML */
+    height: 1rem; /* responsive (to the font-size of html) */
+    height: calc(100% - 10px); /* calculate a percentage minus a pixel value */
 }
 
 ```
@@ -86,12 +91,12 @@ There are different units that can be used in CSS:
 The best way to do layouts! 
 
 ```css
-.class {
+.class{
     display: flex;
     flex-direction: row; /* or column */
-    align-items: flex-start; /* or "center," "space-between," "space-around," 
-    or "flex-end" */
-    justify-content: wrap;
+    align-items: flex-start; /* or "center", "space-between", "space-around", or "flex-end" */
+    justify-content: flex-start; /* also has the same options as align-items */
+    flex-wrap: wrap;
 }
 ```
 
